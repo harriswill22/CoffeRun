@@ -13,32 +13,33 @@
 
 <form action="https://dc-coffeerun.herokuapp.com/api/coffeeOrders"
     method="POST"
+    data-form
 >
     <label>
     Coffee:
-    <input type="text"  name="coffee" placeholder="Bright, like my soul"  >
+    <input type="text"  name="coffee" placeholder="Bright, like my soul" value="espresso"  >
     </label>
 
     <br><br>
 
     <label>
     Email Address:
-    <input type="email" name="emailAddress" placeholder="sonso@sonso.com">
+    <input type="email" name="emailAddress" placeholder="sonso@sonso.com" value="hey@hey.com">
     </label>
     <br><br>
     <label>
         Flavor:
-        <input type="text" name="flavor" placeholder="chocolate">
+        <input type="text" name="flavor" placeholder="chocolate" value="Lemon">
     </label>
     <br><br>
     <label>
         Size:
-        <input type="text" name="size" placeholder="tall">
+        <input type="text" name="size" placeholder="tall" value="Tiny">
     </label>
     <br><br>
     <label>
         Strength:
-        <input type="number" name="strength" min="0" max="100" value="99">
+        <input type="number" name="strength" min="0" max="100" value="99" >
     </label>
     <br><br>
     <input type="submit">
