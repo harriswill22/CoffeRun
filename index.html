@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheets" href="stylesheets/index.css">
+    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"> 
+</head>
+<body>
+<h1>Coffee Run!!</h1>
+
+<form action="https://dc-coffeerun.herokuapp.com/api/coffeeOrders"
+    method="POST"
+>
+    <label>
+    Coffee:
+    <input type="text"  name="coffee" placeholder="Bright, like my soul"  >
+    </label>
+
+    <br><br>
+
+    <label>
+    Email Address:
+    <input type="email" name="emailAddress" placeholder="sonso@sonso.com">
+    </label>
+    <br><br>
+    <label>
+        Flavor:
+        <input type="text" name="flavor" placeholder="chocolate">
+    </label>
+    <br><br>
+    <label>
+        Size:
+        <input type="text" name="size" placeholder="tall">
+    </label>
+    <br><br>
+    <label>
+        Strength:
+        <input type="number" name="strength" min="0" max="100" value="99">
+    </label>
+    <br><br>
+    <input type="submit">
+
+
+</form>
+
+
+<script src="scripts/index.js"></script>
+
+</body>
+</html>
