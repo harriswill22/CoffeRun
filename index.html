@@ -10,10 +10,12 @@
 </head>
 <body>
 <h1>Coffee Run!!</h1>
+<div data-notification></div>
 
 <form action="https://dc-coffeerun.herokuapp.com/api/coffeeOrders"
     method="POST"
     data-form
+    action="/api/process/form"
 >
     <label>
     Coffee:
@@ -42,8 +44,7 @@
         <input type="number" name="strength" min="0" max="100" value="99" >
     </label>
     <br><br>
-    <input type="submit">
-
+    <button type="submit">SubmitAction</button>
 
 </form>
 

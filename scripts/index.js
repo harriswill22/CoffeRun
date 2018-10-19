@@ -2,10 +2,7 @@
 //  Dom Selections 
 // ========================================
 const orderForm = document.querySelector('[data-form]');
-
-
-
-
+const notificationArea = document.querySelector('[data-notification]');
 
 
 
@@ -41,6 +38,23 @@ function handelSubmit(event) {
         },
         body: JSON.stringify(data)
     })
+    .then(r => r.json())
+    .then(() => {
+        notifyUser('Coffee is on the way')   //gotta wrap it in an anonymous function   
+    })
+
+}
+function notifyUser(notificationText) {
+    // create a div
+    const notificationBox = document.createElement('div')
+    // add text to div
+    notificationBox.textContent = notificationText;
+    
+    notificationArea.innerHTML = ""
+    
+    // append to something 
+    notificationArea.appendChild(notificationBox);
+
 }
 
 
